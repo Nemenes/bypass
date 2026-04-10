@@ -4,8 +4,8 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-VERIFICATION_TOKEN = "YOUR_VERIFICATION_TOKEN"
-ENDPOINT = "https://YOUR-RAILWAY-URL/webhook/ebay/deletion"
+VERIFICATION_TOKEN = "gyuidfiugdfiugiudfgdifoguasasdasd"
+ENDPOINT = "https://bypass-production-a643.up.railway.app/webhook/ebay/deletion"
 
 @app.route("/webhook/ebay/deletion", methods=["GET", "POST"])
 def ebay_webhook():
