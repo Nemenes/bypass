@@ -20,6 +20,7 @@ def ebay_webhook():
     if challenge_code:
         # eBay REQUIRED formula (no deviations)
         hash_input = challenge_code + VERIFICATION_TOKEN + ENDPOINT
+        print("HASH INPUT:", challenge_code + VERIFICATION_TOKEN + ENDPOINT)
 
         digest = hashlib.sha256(hash_input.encode("utf-8")).digest()
         challenge_response = base64.b64encode(digest).decode("utf-8")
