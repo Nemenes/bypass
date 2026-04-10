@@ -8,7 +8,7 @@ app = Flask(__name__)
 VERIFICATION_TOKEN = "gyuidfiugdfiugiudfgdifoguasasdasd"
 
 # MUST EXACTLY match the URL you entered in eBay Dev Portal
-ENDPOINT = "https://bypass-production-a643.up.railway.app/webhook/ebay/deletion"
+ENDPOINT = "https://bypass-production-a643.up.railway.app/webhook/ebay/deletion/"
 
 
 @app.route("/webhook/ebay/deletion", methods=["GET", "POST"])
